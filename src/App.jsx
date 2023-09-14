@@ -31,7 +31,7 @@ function App() {
             {redditData.map((post, index) => (
               <div className="bg-white border border-gray-300 rounded-lg p-4 max-w-md" key={index}>
                 <h2 className="text-lg font-semibold">{post.data.title}</h2>
-                <p className="mt-2 text-sm overflow-hidden overflow-ellipsis max-w-xs">
+                <p className="mt-2 text-sm overflow-hidden overflow-ellipsis max-w-xs w-72 truncate">
                   {post.data.selftext}
                 </p>
                 <a
